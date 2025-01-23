@@ -2,8 +2,8 @@
 <img src="https://i.imgur.com/pU5A58S.png" alt="Microsoft Active Directory Logo"/>
 </p>
 
-<h1>On-premises Active Directory Deployed in the Cloud (Azure)</h1>
-This tutorial outlines the implementation of on-premises Active Directory within Azure Virtual Machines.<br />
+<h1>Active Directory Deployment on Azure </h1>
+This repository contains instructions and configurations for deploying an on-premises Active Directory environment on Azure Virtual Machines. The steps outlined in this repository demonstrate the setup and management of Active Directory Domain Services within a cloud-based environment.<br />
 
 
 <h2>Environments and Technologies Used</h2>
@@ -35,6 +35,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
   - Use the credentials:
     - Username: `mydomain.com\`
 
+
 <img width="830" alt="Screenshot 2025-01-23 at 3 39 35 PM" src="https://github.com/user-attachments/assets/4e576c4c-b6dd-4aa6-bf85-6070571682bf" />
 <img width="671" alt="Screenshot 2025-01-23 at 3 39 41 PM" src="https://github.com/user-attachments/assets/3d8b8ec4-0942-4669-91e5-20bad33d35a5" />
 <img width="1223" alt="Screenshot 2025-01-23 at 3 40 40 PM" src="https://github.com/user-attachments/assets/f4febafe-d041-48c5-a1e3-6f2f18458b75" />
@@ -59,6 +60,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
     - Password: `Cyberlab123!`
   - Use `jane_admin` as the admin account from this point forward.
 
+
 <img width="692" alt="Screenshot 2025-01-23 at 3 45 08 PM" src="https://github.com/user-attachments/assets/52a900c0-8050-413f-a57b-39d41995e8e1" />
 <img width="684" alt="Screenshot 2025-01-23 at 3 45 28 PM" src="https://github.com/user-attachments/assets/d756cefa-8fee-43ff-83aa-949763c18fdb" />
 <img width="664" alt="Screenshot 2025-01-23 at 3 45 52 PM" src="https://github.com/user-attachments/assets/b6c24ef3-1556-4afd-9721-bdca545410e5" />
@@ -66,6 +68,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <img width="651" alt="Screenshot 2025-01-23 at 3 46 30 PM" src="https://github.com/user-attachments/assets/ef0c6e97-061e-4331-8cd3-462490184e8d" />
 <img width="406" alt="Screenshot 2025-01-23 at 3 47 10 PM" src="https://github.com/user-attachments/assets/801c5acf-9a74-4240-a73c-de9353dfc8e0" />
 <img width="533" alt="Screenshot 2025-01-23 at 3 47 30 PM" src="https://github.com/user-attachments/assets/fe2e062a-080e-4259-87f6-289556859abc" />
+
 
  
 **Join `Client-1` to the Domain**
@@ -79,6 +82,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
   - Create an OU named `_CLIENTS`.
   - Drag `Client-1` into the `_CLIENTS OU`.
 
+
 <img width="921" alt="Screenshot 2025-01-23 at 3 50 00 PM" src="https://github.com/user-attachments/assets/bed85172-e5dc-4956-8762-eea8e07e5ade" />
 <img width="426" alt="Screenshot 2025-01-23 at 3 50 17 PM" src="https://github.com/user-attachments/assets/47790e14-d7f2-4b27-bb08-b062aacbdca9" />
 <img width="421" alt="Screenshot 2025-01-23 at 3 51 12 PM" src="https://github.com/user-attachments/assets/1c0b9cad-2fc9-4446-babe-8ec74a4ffe5a" />
@@ -87,6 +91,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <img width="574" alt="Screenshot 2025-01-23 at 3 52 30 PM" src="https://github.com/user-attachments/assets/17e0e492-2047-4d5d-a6cc-459c507ca1f8" />
 <img width="607" alt="Screenshot 2025-01-23 at 3 52 44 PM" src="https://github.com/user-attachments/assets/c83ed5c1-fb69-48a3-b49c-96e2a50232ba" />
 <img width="728" alt="Screenshot 2025-01-23 at 3 53 02 PM" src="https://github.com/user-attachments/assets/f65d3964-2fec-47a2-a0c3-0b89f123f734" />
+
 
 **Setup Remote Desktop for Non-Administrative Users on Client-1**
 
@@ -99,6 +104,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 - Test Remote Desktop Access
   - You can now log into `Client-1` as a normal, non-administrative user.
    -Note: Typically, this configuration is managed using Group Policy for multiple systems.
+
 
 <img width="454" alt="Screenshot 2025-01-23 at 4 05 59 PM" src="https://github.com/user-attachments/assets/665b22bd-58b9-4127-a7f6-8667cb8e7b4c" />
 <img width="843" alt="Screenshot 2025-01-23 at 4 06 36 PM" src="https://github.com/user-attachments/assets/1bb20155-8432-4e58-aec5-6d21b284fb1e" />
@@ -122,6 +128,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
   - Attempt to log into `Client-1` using one of the newly created accounts.
   - Ensure the account password matches what is specified in the script.
 
+
 <img width="463" alt="Screenshot 2025-01-23 at 4 08 49 PM" src="https://github.com/user-attachments/assets/baaf9830-96e3-41ac-83d4-3d921678e598" />
 <img width="1056" alt="Screenshot 2025-01-23 at 4 10 56 PM" src="https://github.com/user-attachments/assets/6d001fd1-8a35-4b2f-95c8-f7e307deff3d" />
 <img width="1075" alt="Screenshot 2025-01-23 at 4 11 51 PM" src="https://github.com/user-attachments/assets/1672380d-8f86-4110-8ff1-6cabeeafd496" />
@@ -130,3 +137,9 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <img width="504" alt="Screenshot 2025-01-23 at 4 12 45 PM" src="https://github.com/user-attachments/assets/9cbef0ab-23fa-4e71-ba6c-e3443083a78e" />
 <img width="625" alt="Screenshot 2025-01-23 at 4 18 45 PM" src="https://github.com/user-attachments/assets/5740d186-36e0-4ece-9ce5-a6803321272d" />
 <img width="559" alt="Screenshot 2025-01-23 at 4 19 44 PM" src="https://github.com/user-attachments/assets/23bd76dc-d75e-41fe-8e93-846e1ae83c19" />
+
+
+<h2>Purpose</h2>
+The purpose of this repository is to provide a comprehensive guide for deploying Active Directory through virtual machines on Azure. This implementation is intended to replicate on-premises infrastructure within a cloud environment, enabling scalable and manageable domain services for various organizational needs.
+
+
