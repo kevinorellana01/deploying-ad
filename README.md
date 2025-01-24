@@ -21,7 +21,7 @@ This repository contains instructions and configurations for deploying an on-pre
 
 <h2>Deployment and Configuration Steps</h2>
 
-**Install Active Directory**
+**1. Install Active Directory**
 - Login to `DC-1`
   - Use the credentials:
     - Username: 
@@ -43,7 +43,7 @@ This repository contains instructions and configurations for deploying an on-pre
 <img width="421" alt="Screenshot 2025-01-23 at 3 42 14 PM" src="https://github.com/user-attachments/assets/1378c546-4afc-4e90-891e-c95eea98e73e" />
 
 
-**Create a Domain Admin User**
+**2. Create a Domain Admin User**
 - Open Active Directory Users and Computers (ADUC)
 - Create Organizational Units (OUs)
   - Create an OU named `_EMPLOYEES`.
@@ -71,7 +71,7 @@ This repository contains instructions and configurations for deploying an on-pre
 
 
  
-**Join `Client-1` to the Domain**
+**3. Join `Client-1` to the Domain**
 - Login to `Client-1` as Local Admin
 - Join `Client-1` to the Domain
   - Change the system properties to join the domain `mydomain.com.`
@@ -93,7 +93,7 @@ This repository contains instructions and configurations for deploying an on-pre
 <img width="728" alt="Screenshot 2025-01-23 at 3 53 02 PM" src="https://github.com/user-attachments/assets/f65d3964-2fec-47a2-a0c3-0b89f123f734" />
 
 
-**Setup Remote Desktop for Non-Administrative Users on Client-1**
+**4. Setup Remote Desktop for Non-Administrative Users on Client-1**
 
 - Login to `Client-1` as `mydomain.com\jane_admin`
   - Use the credentials for `jane_admin`.
@@ -112,7 +112,7 @@ This repository contains instructions and configurations for deploying an on-pre
 <img width="401" alt="Screenshot 2025-01-23 at 4 07 18 PM" src="https://github.com/user-attachments/assets/e952c9c0-5d5a-4038-b759-9cee7ea85b62" />
 
 
-**Create Additional Users and Test Login**
+**5. Create Additional Users and Test Login**
 
 - Login to `DC-1` as `jane_admin`
   - Use the credentials for `jane_admin`.
